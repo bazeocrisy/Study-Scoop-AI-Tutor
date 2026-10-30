@@ -1,23 +1,16 @@
-# Cloudflare AI Tutor Worker — development only
+# Separate parent pilot Worker — not deployed
 
-Built separately from Word Workshop's OCR Worker, using the same Cloudflare + Anthropic architecture. **Not deployed.**
+Uses the shared controller and verified lesson. Browser cannot choose lesson position, answer keys, quotas or AI prompts. HMAC-signed, random session capabilities expire within one hour, bind to lesson 6-1 and are kept only in browser memory. This is parent-provisioned pilot access, not child accounts. A stolen token remains usable until expiry; keep it private. CORS is an additional browser restriction, not authentication.
 
-## Setup (when ready)
-1. Confirm the current supported Anthropic model ID and update `MODEL`.
-2. Configure `ANTHROPIC_API_KEY` and `PARENT_PASSPHRASE` as Worker secrets using Wrangler; never commit values.
-3. Deploy only to a protected parent testing environment after reviewing authentication, rate limits, budget, and children's privacy.
-4. Do not use the shared passphrase as a permanent student authentication system.
+Before an owner-approved deployment:
+1. Install current Wrangler on a trusted machine and run `wrangler deploy --dry-run` here. This environment did not install or verify Wrangler bundling.
+2. Configure a separate Worker and Durable Object binding from this directory. Choose an approved hostname; workers_dev is disabled and routes are deliberately absent.
+3. Provision SESSION_SIGNING_SECRET as a Worker secret (32+ random characters). On the parent's trusted machine use the same secret with `node scripts/issue-session.js` from repo root; paste only the one-hour output token into Parent setup. Never put the signing secret in the frontend. Origin must exactly match ALLOWED_ORIGINS.
+4. Leave AI_ENABLED=false for no paid calls. To enable after cost approval: verify a currently supported Anthropic Messages model using official docs and a model lookup, set MODEL and ANTHROPIC_API_KEY as server configuration, set an account spend limit, then AI_ENABLED=true. This run could not retrieve current provider documentation; no model ID is guessed.
+5. Review browser speech vendor processing and guardian consent before a child uses the microphone. This tutor stores no raw audio. Speech recognition may send audio to the browser vendor independently of the Worker.
 
-## Routes
-- `GET /health`: configuration status, no secrets
-- `POST /api/tutor`: JSON `{conceptIndex,action,message}` with `x-parent-key` header; actions: `start`, `answer`, `question`.
+`POST /api/tutor`: Authorization Bearer session token; JSON `{action,revision,message,cells,requestId}`. Initial action start returns current position. Other actions require exact revision. Retry the same requestId and body after uncertain network failure. Reconnecting with start resumes server state. Responses expose only current question and review results after completion.
 
-## Known gaps
-- This is a **stateless prototype**. The browser currently controls concept index; no verified server-side progression, identity, or persistence.
-- Open-ended answers return `needs-review` instead of incorrectly treating them as wrong.
-- No real-time audio, streaming, abuse-resistant quotas, child accounts, or production privacy review.
-- The frontend is not yet connected to this Worker.
-- The Worker uses an imported JSON curriculum; verify bundling with Wrangler before deployment.
-- Model output is constrained by prompting but still requires evaluation and safety checks.
+Durable coordinator serializes pilot state, rejects rapid turns (<300ms), caps session requests at 120 and paid explanation selections at 4/session and 12/UTC day globally. Reserves quota before calls; rejects invalid output; times out at 8s with reviewed fallback. No automatic upstream retries. Max 4096 actual bytes/request, 500 characters/student message, 100 output tokens/call. AI cannot speak arbitrary generated text or change lesson/grades; it selects reviewed explanations. This deliberately bounds the first prototype; unrestricted conversation and realtime streaming audio remain future work.
 
-The existing Study Scoop production website and Word Workshop Worker remain untouched.
+Session responses, explanations and assessment work are held in Durable Object storage until token expiration, with cleanup alarm (normally within one minute afterward). No student names required, no raw audio, no transcript logs or analytics. Parent summary is in current session only; no account learning history. Provider requests contain only the current concept and current question/explanation, not full history; assess provider retention separately before enabling.

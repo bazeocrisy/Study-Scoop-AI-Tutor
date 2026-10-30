@@ -1,0 +1,28 @@
+import json
+from pathlib import Path
+
+def grid(rows,visible=None,mode='tiles'):
+ return dict(rows=rows,visible=visible or rows,mode=mode)
+def concept(id,name,teach,alternative,q,accepted,visual,kind='exact',options=None):
+ return dict(id=id,name=name,teach=teach,alternative=alternative,visual=visual,check=dict(question=q,accepted=accepted,kind=kind,options=options))
+cs=[
+concept('inside','Cover the inside','Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside.','Imagine coloring a shape. Area measures the surface you color. The line around it is its boundary.','Does area measure the inside surface or the boundary?',['inside','inside surface','the inside','the inside surface'],grid(['XXXX','XXXX']),options=['Inside surface','Boundary']),
+concept('unit','One little square','Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface.','A unit is a chosen length. A unit square is one unit across and one unit tall. All our measuring squares must be the same size.','How long is each side of a unit square?',['1','one','one unit','1 unit'],grid(['X'],mode='unit')),
+concept('tiling','Cover without gaps','Tiling means covering a figure with unit squares, without gaps or overlaps. Gaps leave surface uncovered. Overlaps cover some surface twice.','Imagine laying square stickers on a card. They must meet edge to edge. No bare spots, and no sticker on top of another.','Why would a gap make our area count inaccurate?',[],grid(['XXXX','XXXX'],mode='gaps'),'reason'),
+concept('count','Count every square','Each tile represents one square unit. Count every square exactly once. You can count across one row, then the next.','Touch each square as you count. Move to a new row after reaching the end. Say square units with your total.','What is the area of this figure in square units?',['15','fifteen','15 square units','fifteen square units'],grid(['XXXXX','XXXXX','XXXXX'])),
+concept('partial','Finish the tiling','Some squares are missing from this tiling. The outline still shows the whole figure. Add equal unit squares until the whole inside is covered.','Use a shown square as a guide. Extend its edges across the blank space. Count both the original squares and the ones you add.','Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?',['12','twelve','12 square units','twelve square units'],grid(['XXXX','XXXX','XXXX'],['XXXX','X...','X...'],'partial')),
+concept('irregular','Follow the outline','Not every figure is a rectangle. Tile only the surface inside this outline. Empty space outside the outline is not part of the figure.','This figure has a shorter top row. Count each row separately, including only squares that belong to the figure.','What is the area inside this outline in square units?',['10','ten','10 square units','ten square units'],grid(['XX..','XXXX','XXXX'])),
+concept('make','Build an area','We can also start with an area and build a figure. Each square you place contributes one square unit. Keep the squares connected edge to edge.','For an area of four square units, you could join four equal squares. Many outlines can have the same area.','Tap squares to build any connected figure with an area of 8 square units. Then send your answer.',['8','eight'],grid(['....','....','....'],mode='build'),'build'),
+concept('reason','Explain your thinking','Equal squares fit together edge to edge to cover a surface. Circles leave spaces between them. Tiling helps us measure all of the inside once.','The job is to cover the entire surface exactly once. Square sides meet neatly. Round tiles leave uncovered spaces.','Why are unit squares better than circles for tiling a figure?',[],grid(['XXX','XXX'],mode='circles'),'reason')]
+a=[
+dict(id='a1',skill='count',question='Find the area in square units.',visual=grid(['XXXX','XXXX']),answer=8,kind='number'),
+dict(id='a2',skill='tiling',question='Which rule gives a valid area measurement?',options=['Leave gaps','Cover some places twice','Use equal unit squares with no gaps or overlaps'],answer='Use equal unit squares with no gaps or overlaps',kind='exact'),
+dict(id='a3',skill='partial',question='Complete this tiling. What is the whole area in square units?',visual=grid(['XXXXX','XXXXX','XXXXX'],['XXXXX','X....','X....'],'partial'),answer=15,kind='number'),
+dict(id='a4',skill='irregular',question='Find the area inside this outline in square units.',visual=grid(['XXX..','XXXXX','XXXXX']),answer=13,kind='number'),
+dict(id='a5',skill='unit',question='How many units long is each side of a unit square?',visual=grid(['X'],mode='unit'),answer=1,kind='number'),
+dict(id='a6',skill='make',question='Build any connected figure with an area of 6 square units. Then send your answer.',visual=grid(['....','....','....'],mode='build'),answer=6,kind='build'),
+dict(id='a7',skill='reason',question='Explain how tiling helps you find area, and why gaps or overlaps change the measurement.',answer=None,kind='reason')]
+for c in cs:
+ c['example']={'text':'A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.','visual':grid(['XXX','XXX'])}
+lesson=dict(id='6-1',title='Understand Area',version=1,source=dict(document='Chris_Chapter_6_Complete_Ordered.pdf',printedPages=[213,214,215,216],verified='2026-10-30',note='Original equivalent activities; not verbatim textbook exercises.'),concepts=cs,assessment=a)
+Path('curriculum/6-1.json').write_text(json.dumps(lesson,indent=2)+'\n')

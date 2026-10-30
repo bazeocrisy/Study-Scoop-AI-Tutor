@@ -1,6 +1,7 @@
 {
   "id": "6-1",
   "title": "Understand Area",
+  "version": 1,
   "source": {
     "document": "Chris_Chapter_6_Complete_Ordered.pdf",
     "printedPages": [
@@ -8,120 +9,458 @@
       214,
       215,
       216
-    ]
+    ],
+    "verified": "2026-10-30",
+    "note": "Original equivalent activities; not verbatim textbook exercises."
   },
-  "goal": "Explain area as the amount of surface inside a figure, measured by counting unit squares in a tiling without gaps or overlaps.",
   "concepts": [
     {
       "id": "inside",
-      "name": "Area measures inside",
-      "teach": "Area is the amount of surface inside a flat shape, not the distance around its edge.",
+      "name": "Cover the inside",
+      "teach": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside.",
+      "alternative": "Imagine coloring a shape. Area measures the surface you color. The line around it is its boundary.",
+      "visual": {
+        "rows": [
+          "XXXX",
+          "XXXX"
+        ],
+        "visible": [
+          "XXXX",
+          "XXXX"
+        ],
+        "mode": "tiles"
+      },
       "check": {
-        "question": "Does area measure the inside or the outside edge?",
-        "answer": "inside",
+        "question": "Does area measure the inside surface or the boundary?",
         "accepted": [
           "inside",
-          "the inside"
+          "inside surface",
+          "the inside",
+          "the inside surface"
+        ],
+        "kind": "exact",
+        "options": [
+          "Inside surface",
+          "Boundary"
         ]
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
       }
     },
     {
-      "id": "unit-square",
-      "name": "Unit squares",
-      "teach": "A unit square has side lengths of one unit. Equal-sized unit squares let us measure area.",
+      "id": "unit",
+      "name": "One little square",
+      "teach": "Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface.",
+      "alternative": "A unit is a chosen length. A unit square is one unit across and one unit tall. All our measuring squares must be the same size.",
+      "visual": {
+        "rows": [
+          "X"
+        ],
+        "visible": [
+          "X"
+        ],
+        "mode": "unit"
+      },
       "check": {
         "question": "How long is each side of a unit square?",
-        "answer": "one unit",
         "accepted": [
+          "1",
+          "one",
           "one unit",
           "1 unit"
-        ]
+        ],
+        "kind": "exact",
+        "options": null
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
       }
     },
     {
       "id": "tiling",
-      "name": "No gaps or overlaps",
-      "teach": "Tiling covers a region with unit squares that fit without gaps or overlaps.",
+      "name": "Cover without gaps",
+      "teach": "Tiling means covering a figure with unit squares, without gaps or overlaps. Gaps leave surface uncovered. Overlaps cover some surface twice.",
+      "alternative": "Imagine laying square stickers on a card. They must meet edge to edge. No bare spots, and no sticker on top of another.",
+      "visual": {
+        "rows": [
+          "XXXX",
+          "XXXX"
+        ],
+        "visible": [
+          "XXXX",
+          "XXXX"
+        ],
+        "mode": "gaps"
+      },
       "check": {
-        "question": "Why can't we leave gaps between the tiles?",
-        "answer": "the region would not be completely covered",
-        "accepted": []
+        "question": "Why would a gap make our area count inaccurate?",
+        "accepted": [],
+        "kind": "reason",
+        "options": null
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
       }
     },
     {
-      "id": "counting",
-      "name": "Count unit squares",
-      "teach": "Count each square exactly once, using rows to stay organized.",
+      "id": "count",
+      "name": "Count every square",
+      "teach": "Each tile represents one square unit. Count every square exactly once. You can count across one row, then the next.",
+      "alternative": "Touch each square as you count. Move to a new row after reaching the end. Say square units with your total.",
       "visual": {
-        "type": "grid",
-        "rows": 3,
-        "cols": 5
+        "rows": [
+          "XXXXX",
+          "XXXXX",
+          "XXXXX"
+        ],
+        "visible": [
+          "XXXXX",
+          "XXXXX",
+          "XXXXX"
+        ],
+        "mode": "tiles"
       },
       "check": {
-        "question": "How many unit squares cover this 3-row, 5-column rectangle?",
-        "answer": "15",
+        "question": "What is the area of this figure in square units?",
         "accepted": [
           "15",
-          "fifteen"
-        ]
+          "fifteen",
+          "15 square units",
+          "fifteen square units"
+        ],
+        "kind": "exact",
+        "options": null
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
       }
     },
     {
       "id": "partial",
-      "name": "Complete a partial tiling",
-      "teach": "If only some squares are shown, imagine how many more squares fill the whole shape without gaps.",
+      "name": "Finish the tiling",
+      "teach": "Some squares are missing from this tiling. The outline still shows the whole figure. Add equal unit squares until the whole inside is covered.",
+      "alternative": "Use a shown square as a guide. Extend its edges across the blank space. Count both the original squares and the ones you add.",
       "visual": {
-        "type": "partial-grid",
-        "rows": 3,
-        "cols": 4,
+        "rows": [
+          "XXXX",
+          "XXXX",
+          "XXXX"
+        ],
         "visible": [
           "XXXX",
           "X...",
           "X..."
-        ]
+        ],
+        "mode": "partial"
       },
       "check": {
-        "question": "How many unit squares cover the completed 3-row, 4-column rectangle?",
-        "answer": "12",
+        "question": "Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
         "accepted": [
           "12",
-          "twelve"
-        ]
+          "twelve",
+          "12 square units",
+          "twelve square units"
+        ],
+        "kind": "exact",
+        "options": null
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
+      }
+    },
+    {
+      "id": "irregular",
+      "name": "Follow the outline",
+      "teach": "Not every figure is a rectangle. Tile only the surface inside this outline. Empty space outside the outline is not part of the figure.",
+      "alternative": "This figure has a shorter top row. Count each row separately, including only squares that belong to the figure.",
+      "visual": {
+        "rows": [
+          "XX..",
+          "XXXX",
+          "XXXX"
+        ],
+        "visible": [
+          "XX..",
+          "XXXX",
+          "XXXX"
+        ],
+        "mode": "tiles"
+      },
+      "check": {
+        "question": "What is the area inside this outline in square units?",
+        "accepted": [
+          "10",
+          "ten",
+          "10 square units",
+          "ten square units"
+        ],
+        "kind": "exact",
+        "options": null
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
+      }
+    },
+    {
+      "id": "make",
+      "name": "Build an area",
+      "teach": "We can also start with an area and build a figure. Each square you place contributes one square unit. Keep the squares connected edge to edge.",
+      "alternative": "For an area of four square units, you could join four equal squares. Many outlines can have the same area.",
+      "visual": {
+        "rows": [
+          "....",
+          "....",
+          "...."
+        ],
+        "visible": [
+          "....",
+          "....",
+          "...."
+        ],
+        "mode": "build"
+      },
+      "check": {
+        "question": "Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+        "accepted": [
+          "8",
+          "eight"
+        ],
+        "kind": "build",
+        "options": null
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
+      }
+    },
+    {
+      "id": "reason",
+      "name": "Explain your thinking",
+      "teach": "Equal squares fit together edge to edge to cover a surface. Circles leave spaces between them. Tiling helps us measure all of the inside once.",
+      "alternative": "The job is to cover the entire surface exactly once. Square sides meet neatly. Round tiles leave uncovered spaces.",
+      "visual": {
+        "rows": [
+          "XXX",
+          "XXX"
+        ],
+        "visible": [
+          "XXX",
+          "XXX"
+        ],
+        "mode": "circles"
+      },
+      "check": {
+        "question": "Why are unit squares better than circles for tiling a figure?",
+        "accepted": [],
+        "kind": "reason",
+        "options": null
+      },
+      "example": {
+        "text": "A small card has two rows of three unit squares. Count 1, 2, 3 in the top row, then 4, 5, 6 in the bottom row. Its area is 6 square units. The squares cover it without gaps or overlaps.",
+        "visual": {
+          "rows": [
+            "XXX",
+            "XXX"
+          ],
+          "visible": [
+            "XXX",
+            "XXX"
+          ],
+          "mode": "tiles"
+        }
       }
     }
   ],
   "assessment": [
     {
       "id": "a1",
-      "type": "number",
-      "rows": 2,
-      "cols": 6,
-      "answer": 12
+      "skill": "count",
+      "question": "Find the area in square units.",
+      "visual": {
+        "rows": [
+          "XXXX",
+          "XXXX"
+        ],
+        "visible": [
+          "XXXX",
+          "XXXX"
+        ],
+        "mode": "tiles"
+      },
+      "answer": 8,
+      "kind": "number"
     },
     {
       "id": "a2",
-      "type": "number",
-      "rows": 3,
-      "cols": 4,
-      "answer": 12
+      "skill": "tiling",
+      "question": "Which rule gives a valid area measurement?",
+      "options": [
+        "Leave gaps",
+        "Cover some places twice",
+        "Use equal unit squares with no gaps or overlaps"
+      ],
+      "answer": "Use equal unit squares with no gaps or overlaps",
+      "kind": "exact"
     },
     {
       "id": "a3",
-      "type": "choice",
-      "question": "Which tiling measures area correctly?",
-      "options": [
-        "Squares with gaps",
-        "Squares with overlaps",
-        "Squares with no gaps or overlaps"
-      ],
-      "correctIndex": 2
+      "skill": "partial",
+      "question": "Complete this tiling. What is the whole area in square units?",
+      "visual": {
+        "rows": [
+          "XXXXX",
+          "XXXXX",
+          "XXXXX"
+        ],
+        "visible": [
+          "XXXXX",
+          "X....",
+          "X...."
+        ],
+        "mode": "partial"
+      },
+      "answer": 15,
+      "kind": "number"
+    },
+    {
+      "id": "a4",
+      "skill": "irregular",
+      "question": "Find the area inside this outline in square units.",
+      "visual": {
+        "rows": [
+          "XXX..",
+          "XXXXX",
+          "XXXXX"
+        ],
+        "visible": [
+          "XXX..",
+          "XXXXX",
+          "XXXXX"
+        ],
+        "mode": "tiles"
+      },
+      "answer": 13,
+      "kind": "number"
+    },
+    {
+      "id": "a5",
+      "skill": "unit",
+      "question": "How many units long is each side of a unit square?",
+      "visual": {
+        "rows": [
+          "X"
+        ],
+        "visible": [
+          "X"
+        ],
+        "mode": "unit"
+      },
+      "answer": 1,
+      "kind": "number"
+    },
+    {
+      "id": "a6",
+      "skill": "make",
+      "question": "Build any connected figure with an area of 6 square units. Then send your answer.",
+      "visual": {
+        "rows": [
+          "....",
+          "....",
+          "...."
+        ],
+        "visible": [
+          "....",
+          "....",
+          "...."
+        ],
+        "mode": "build"
+      },
+      "answer": 6,
+      "kind": "build"
+    },
+    {
+      "id": "a7",
+      "skill": "reason",
+      "question": "Explain how tiling helps you find area, and why gaps or overlaps change the measurement.",
+      "answer": null,
+      "kind": "reason"
     }
-  ],
-  "constraints": {
-    "teachBeforeAssess": true,
-    "maxConsecutiveHints": 2,
-    "doNotRevealAssessmentAnswers": true,
-    "voiceTurnTaking": "wait for student response",
-    "neverClaimClinicalDiagnosis": true
-  }
+  ]
 }

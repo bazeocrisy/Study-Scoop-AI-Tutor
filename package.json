@@ -1,9 +1,1 @@
-{
-  "name": "study-scoop-ai-tutor",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node server/index.js",
-    "test": "node --test"
-  }
-}
+{"name":"study-scoop-ai-tutor","private":true,"type":"module","scripts":{"start":"node server/index.js","dev":"node server/index.js","test":"node --test","check":"node --check app.js && node --check engine/controller.js && node --check cloudflare/tutor-worker/worker.js"}}
