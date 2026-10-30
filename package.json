@@ -1,1 +1,16 @@
-{"name":"study-scoop-ai-tutor","private":true,"type":"module","scripts":{"start":"node server/index.js","dev":"node server/index.js","test":"node --test","check":"node --check app.js && node --check engine/controller.js && node --check cloudflare/tutor-worker/worker.js"}}
+{
+  "name": "study-scoop-ai-tutor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "node --test",
+    "check": "node --check app.js && node --check engine/controller.js && node --check engine/voice-turn.js && node --check engine/coach.js && node --check cloudflare/tutor-worker/worker.js",
+    "test:runtime": "wrangler deploy --dry-run --outdir .runtime --config cloudflare/tutor-worker/wrangler.toml && node integration/runtime-check.mjs"
+  },
+  "devDependencies": {
+    "miniflare": "^5.20261023.3-beta",
+    "wrangler": "^4.156.0"
+  }
+}

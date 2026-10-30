@@ -27,7 +27,7 @@ export class TutorSessions{
  const {claims,input}=await request.json();const key='s:'+claims.jti;let saved=await this.ctx.storage.get(key);const fingerprint=JSON.stringify(input);
  if(saved?.lastId===input.requestId)return saved.fingerprint===fingerprint?json(saved.output):json({error:'Request ID reused'},409);
  const now=Date.now();if(claims.exp*1000<=now)return json({error:'Session expired'},401);
- if(saved&&now-saved.updated<300)return json({error:'Please wait a moment before retrying.'},429);
+ if(saved&&now-saved.updated<300&&!['start','pause','stop','resume','repeat'].includes(input.action))return json({error:'Please wait a moment before retrying.'},429);
  if((saved?.turns||0)>=120)return json({error:'Session turn limit reached. Take a break.'},429);
  let result;try{result=transition(saved?.state||initialState(),input,lesson)}catch(e){return json({error:e.message==='Stale turn'?'Stale turn; reconnect to resume.':'Invalid turn'},e.message==='Stale turn'?409:400)}
  let output=result.output;
@@ -36,7 +36,7 @@ export class TutorSessions{
   if(used<12&&(saved?.aiCalls||0)<4){await this.ctx.storage.put(budgetKey,used+1);const c=lesson.concepts[result.state.index];const response=await coach(c,input.message,this.env);output={...output,coachStatus:response.status};if(!result.state.checkVariant)output.speech=c[response.choice]+' '+c.check.question;result.aiCalled=true;}
   else output={...output,coachStatus:'budget-fallback'};
  }
- await this.ctx.storage.put(key,{state:result.state,expires:claims.exp*1000,updated:now,turns:(saved?.turns||0)+1,aiCalls:(saved?.aiCalls||0)+(result.aiCalled?1:0),lastId:input.requestId,fingerprint,output});await this.ctx.storage.setAlarm(now+60000);return json(output);
+ await this.ctx.storage.put(key,{state:result.state,expires:claims.exp*1000,updated:now,turns:(saved?.turns||0)+1,aiCalls:(saved?.aiCalls||0)+(result.aiCalled?1:0),lastId:input.requestId,fingerprint,output});const alarm=await this.ctx.storage.getAlarm();if(alarm===null||alarm>now+60000)await this.ctx.storage.setAlarm(now+60000);return json(output);
  });}
  async alarm(){const now=Date.now();const entries=await this.ctx.storage.list();let active=false;const today=new Date(now).toISOString().slice(0,10);for(const [k,v]of entries){if(k.startsWith('s:')){if(v.expires<=now)await this.ctx.storage.delete(k);else active=true;}if(k.startsWith('b:')&&k!=='b:'+today)await this.ctx.storage.delete(k);}if(active)await this.ctx.storage.setAlarm(now+60000);}
 }

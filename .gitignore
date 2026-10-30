@@ -4,3 +4,6 @@ node_modules/
 .wrangler/
 .openai/
 coverage/
+
+.runtime/
+qa-layout.html
