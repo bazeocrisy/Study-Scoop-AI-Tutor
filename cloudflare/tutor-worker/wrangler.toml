@@ -1,0 +1,9 @@
+name = "study-scoop-ai-tutor"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+ALLOWED_ORIGINS = "https://bazeocrisy.github.io"
+MODEL = "claude-sonnet-4-5"
+
+# Secrets: ANTHROPIC_API_KEY, PARENT_PASSPHRASE
