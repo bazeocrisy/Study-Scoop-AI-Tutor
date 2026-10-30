@@ -1,0 +1,127 @@
+{
+  "id": "6-1",
+  "title": "Understand Area",
+  "source": {
+    "document": "Chris_Chapter_6_Complete_Ordered.pdf",
+    "printedPages": [
+      213,
+      214,
+      215,
+      216
+    ]
+  },
+  "goal": "Explain area as the amount of surface inside a figure, measured by counting unit squares in a tiling without gaps or overlaps.",
+  "concepts": [
+    {
+      "id": "inside",
+      "name": "Area measures inside",
+      "teach": "Area is the amount of surface inside a flat shape, not the distance around its edge.",
+      "check": {
+        "question": "Does area measure the inside or the outside edge?",
+        "answer": "inside",
+        "accepted": [
+          "inside",
+          "the inside"
+        ]
+      }
+    },
+    {
+      "id": "unit-square",
+      "name": "Unit squares",
+      "teach": "A unit square has side lengths of one unit. Equal-sized unit squares let us measure area.",
+      "check": {
+        "question": "How long is each side of a unit square?",
+        "answer": "one unit",
+        "accepted": [
+          "one unit",
+          "1 unit"
+        ]
+      }
+    },
+    {
+      "id": "tiling",
+      "name": "No gaps or overlaps",
+      "teach": "Tiling covers a region with unit squares that fit without gaps or overlaps.",
+      "check": {
+        "question": "Why can't we leave gaps between the tiles?",
+        "answer": "the region would not be completely covered",
+        "accepted": []
+      }
+    },
+    {
+      "id": "counting",
+      "name": "Count unit squares",
+      "teach": "Count each square exactly once, using rows to stay organized.",
+      "visual": {
+        "type": "grid",
+        "rows": 3,
+        "cols": 5
+      },
+      "check": {
+        "question": "How many unit squares cover this 3-row, 5-column rectangle?",
+        "answer": "15",
+        "accepted": [
+          "15",
+          "fifteen"
+        ]
+      }
+    },
+    {
+      "id": "partial",
+      "name": "Complete a partial tiling",
+      "teach": "If only some squares are shown, imagine how many more squares fill the whole shape without gaps.",
+      "visual": {
+        "type": "partial-grid",
+        "rows": 3,
+        "cols": 4,
+        "visible": [
+          "XXXX",
+          "X...",
+          "X..."
+        ]
+      },
+      "check": {
+        "question": "How many unit squares cover the completed 3-row, 4-column rectangle?",
+        "answer": "12",
+        "accepted": [
+          "12",
+          "twelve"
+        ]
+      }
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "type": "number",
+      "rows": 2,
+      "cols": 6,
+      "answer": 12
+    },
+    {
+      "id": "a2",
+      "type": "number",
+      "rows": 3,
+      "cols": 4,
+      "answer": 12
+    },
+    {
+      "id": "a3",
+      "type": "choice",
+      "question": "Which tiling measures area correctly?",
+      "options": [
+        "Squares with gaps",
+        "Squares with overlaps",
+        "Squares with no gaps or overlaps"
+      ],
+      "correctIndex": 2
+    }
+  ],
+  "constraints": {
+    "teachBeforeAssess": true,
+    "maxConsecutiveHints": 2,
+    "doNotRevealAssessmentAnswers": true,
+    "voiceTurnTaking": "wait for student response",
+    "neverClaimClinicalDiagnosis": true
+  }
+}
