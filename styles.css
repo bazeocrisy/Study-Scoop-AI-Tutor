@@ -3,3 +3,4 @@
 .example{background:#fff8dc;border:1px solid #e4d6a2;padding:14px;border-radius:12px;font-size:14px;line-height:1.5}.example-tiles{--size:26px;justify-content:center;margin:10px auto}
 
 .voice-hint{font-size:12px;line-height:1.5;color:#536b59}.example-visual .tiles{--size:30px;justify-content:center;margin:12px auto}.example-visual .unit-wrap .tiles{display:grid;width:max-content}.example-visual{overflow:hidden}
+.lesson-stamp .stamp-number{display:inline;font-size:inherit;letter-spacing:inherit;color:inherit;margin:0}.parent-notice{border:1px solid #e2c98a;background:#fdf8ea;border-radius:12px;padding:12px 16px;margin:14px 0}.parent-notice ul{margin:6px 0 0;padding-left:20px}

@@ -1,7 +1,10 @@
 {
+  "schemaVersion": 1,
   "id": "6-1",
   "title": "Understand Area",
-  "version": 2,
+  "subject": "math",
+  "grade": 3,
+  "version": 3,
   "source": {
     "document": "Chris_Chapter_6_Complete_Ordered.pdf",
     "printedPages": [
@@ -12,6 +15,31 @@
     ],
     "verified": "2026-10-30",
     "note": "Original equivalent activities; not verbatim textbook exercises."
+  },
+  "presentation": {
+    "documentTitle": "Study Scoop · Your Area Tutor",
+    "lessonLabel": "MATH / CHAPTER 6 / LESSON 1",
+    "headline": "A little space.",
+    "headlineEmphasis": "A big discovery.",
+    "subtitle": "Let’s understand area, one square at a time.",
+    "stampNumber": "6–1",
+    "stampLabel": "UNDERSTAND AREA",
+    "introHeading": "What’s inside a shape?",
+    "introSpeech": "We’ll cover shapes with equal squares and discover what area means. Take your time. I’ll wait for your answers.",
+    "parentNote": "This lesson uses original activities aligned to textbook pages 213–216. Local demo answers are visible in source; use the protected Worker for authoritative assessment.",
+    "workspaceLabel": "Area lesson"
+  },
+  "language": {
+    "units": [
+      "square units",
+      "square unit",
+      "units",
+      "unit"
+    ]
+  },
+  "remediation": {
+    "maxAttempts": 3,
+    "assessWhenUnresolved": false
   },
   "concepts": [
     {
@@ -57,7 +85,8 @@
           ],
           "mode": "tiles"
         }
-      }
+      },
+      "requires": []
     },
     {
       "id": "unit",
@@ -95,7 +124,10 @@
           ],
           "mode": "unit"
         }
-      }
+      },
+      "requires": [
+        "inside"
+      ]
     },
     {
       "id": "tiling",
@@ -140,7 +172,10 @@
           "It misses some of the surface"
         ],
         "answer": "It misses some of the surface"
-      }
+      },
+      "requires": [
+        "unit"
+      ]
     },
     {
       "id": "count",
@@ -184,7 +219,10 @@
           ],
           "mode": "tiles"
         }
-      }
+      },
+      "requires": [
+        "tiling"
+      ]
     },
     {
       "id": "partial",
@@ -228,7 +266,10 @@
           ],
           "mode": "tiles"
         }
-      }
+      },
+      "requires": [
+        "count"
+      ]
     },
     {
       "id": "irregular",
@@ -272,7 +313,10 @@
           ],
           "mode": "tiles"
         }
-      }
+      },
+      "requires": [
+        "count"
+      ]
     },
     {
       "id": "make",
@@ -299,7 +343,8 @@
           "eight"
         ],
         "kind": "build",
-        "options": null
+        "options": null,
+        "answer": 8
       },
       "example": {
         "text": "Four squares can make a square figure or a long row. This example uses four squares in one row. Each square contributes one square unit.",
@@ -312,7 +357,10 @@
           ],
           "mode": "tiles"
         }
-      }
+      },
+      "requires": [
+        "count"
+      ]
     },
     {
       "id": "edge",
@@ -354,7 +402,10 @@
           ],
           "mode": "tiles"
         }
-      }
+      },
+      "requires": [
+        "unit"
+      ]
     },
     {
       "id": "reason",
@@ -399,7 +450,10 @@
           "Circles"
         ],
         "answer": "Equal unit squares"
-      }
+      },
+      "requires": [
+        "tiling"
+      ]
     }
   ],
   "assessment": [

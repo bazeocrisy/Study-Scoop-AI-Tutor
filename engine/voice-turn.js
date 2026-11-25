@@ -4,6 +4,8 @@ import {command} from './controller.js';
 export function voiceTurn(draft, phrase) {
  const text=String(phrase).trim();
  const intent=command(text);
+ // "Skip" is an answer-turn decision the controller makes (only independent work can be skipped).
+ if(intent==='skip')return {draft:text,action:'answer'};
  if(intent && intent!=='finished')return {draft,action:intent};
  const end=/\b(?:i['’]?m finished|i am finished|finished|im finished)\s*[.!?]*$/i;
  const finished=intent==='finished'||end.test(text);

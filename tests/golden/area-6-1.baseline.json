@@ -1,0 +1,7809 @@
+{
+ "recordedFrom": "engine/controller.js and curriculum/6-1.json at commit e2b03609e8cff37b2e450ef96d70c4ca49abc5cc",
+ "transcripts": [
+  {
+   "name": "complete lesson, all correct, then review controls",
+   "turns": [
+    {
+     "input": {
+      "action": "start"
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 0
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 1,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "That matches this idea. Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 1,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "one",
+      "revision": 1
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 2,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "That matches this idea. Tiling means covering a figure with unit squares, without gaps or overlaps. Gaps leave surface uncovered. Overlaps cover some surface twice. Why would a gap make our area count inaccurate?",
+      "question": "Why would a gap make our area count inaccurate?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "reason",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 2,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "A gap leaves part of the surface uncounted",
+      "revision": 2
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 3,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "Thank you for explaining. I will keep your explanation for your parent. Let us check the idea another way. If we leave part of a surface uncovered, what happens to the measurement?",
+      "question": "If we leave part of a surface uncovered, what happens to the measurement?",
+      "options": [
+       "It measures the whole surface",
+       "It misses some of the surface"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "exact",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 3,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "It misses some of the surface",
+      "revision": 3
+     },
+     "output": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 4,
+      "paused": false,
+      "started": true,
+      "title": "Count every square",
+      "speech": "That matches this idea. Each tile represents one square unit. Count every square exactly once. You can count across one row, then the next. What is the area of this figure in square units?",
+      "question": "What is the area of this figure in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "4 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 4,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "15 square units",
+      "revision": 4
+     },
+     "output": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 5,
+      "paused": false,
+      "started": true,
+      "title": "Finish the tiling",
+      "speech": "That matches this idea. Some squares are missing from this tiling. The outline still shows the whole figure. Add equal unit squares until the whole inside is covered. Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "question": "Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "X...",
+        "X..."
+       ],
+       "mode": "partial"
+      },
+      "kind": "exact",
+      "progress": "5 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 5,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "12",
+      "filled": [
+       5,
+       6,
+       7,
+       9,
+       10,
+       11
+      ],
+      "revision": 5
+     },
+     "output": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 6,
+      "paused": false,
+      "started": true,
+      "title": "Follow the outline",
+      "speech": "That matches this idea. Not every figure is a rectangle. Tile only the surface inside this outline. Empty space outside the outline is not part of the figure. What is the area inside this outline in square units?",
+      "question": "What is the area inside this outline in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "6 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 6,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "ten",
+      "revision": 6
+     },
+     "output": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 7,
+      "paused": false,
+      "started": true,
+      "title": "Build an area",
+      "speech": "That matches this idea. We can also start with an area and build a figure. Each square you place contributes one square unit. Keep the squares connected edge to edge. Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "question": "Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "....",
+        "....",
+        "...."
+       ],
+       "visible": [
+        "....",
+        "....",
+        "...."
+       ],
+       "mode": "build"
+      },
+      "kind": "build",
+      "progress": "7 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 7,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "My figure is ready",
+      "cells": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "revision": 7
+     },
+     "output": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 8,
+      "paused": false,
+      "started": true,
+      "title": "Squares along an edge",
+      "speech": "That matches this idea. Each unit square is one unit wide. If four unit squares sit side by side along an edge, that edge is four units long. Length uses units; area uses square units. How many units long is the top edge of this figure?",
+      "question": "How many units long is the top edge of this figure?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "8 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 8,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "4",
+      "revision": 8
+     },
+     "output": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 9,
+      "paused": false,
+      "started": true,
+      "title": "Explain your thinking",
+      "speech": "That matches this idea. Equal squares fit together edge to edge to cover a surface. Circles leave spaces between them. Tiling helps us measure all of the inside once. Why are unit squares better than circles for tiling a figure?",
+      "question": "Why are unit squares better than circles for tiling a figure?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXX",
+        "XXX"
+       ],
+       "visible": [
+        "XXX",
+        "XXX"
+       ],
+       "mode": "circles"
+      },
+      "kind": "reason",
+      "progress": "9 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 9,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Squares fit edge to edge with no spaces",
+      "revision": 9
+     },
+     "output": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 10,
+      "paused": false,
+      "started": true,
+      "title": "Explain your thinking",
+      "speech": "Thank you for explaining. I will keep your explanation for your parent. Let us check the idea another way. Which tiles can meet edge to edge without leaving spaces?",
+      "question": "Which tiles can meet edge to edge without leaving spaces?",
+      "options": [
+       "Equal unit squares",
+       "Circles"
+      ],
+      "visual": {
+       "rows": [
+        "XXX",
+        "XXX"
+       ],
+       "visible": [
+        "XXX",
+        "XXX"
+       ],
+       "mode": "circles"
+      },
+      "kind": "exact",
+      "progress": "9 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 10,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Equal unit squares",
+      "revision": 10
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "You have worked through the teaching. Now solve these on your own. I will save feedback until you finish. Find the area in square units.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "8",
+      "revision": 11
+     },
+     "output": {
+      "phase": "assess",
+      "index": 1,
+      "revision": 12,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Which rule gives a valid area measurement?",
+      "question": "Which rule gives a valid area measurement?",
+      "options": [
+       "Leave gaps",
+       "Cover some places twice",
+       "Use equal unit squares with no gaps or overlaps"
+      ],
+      "visual": null,
+      "kind": "exact",
+      "progress": "2 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 1,
+      "revision": 12,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Use equal unit squares with no gaps or overlaps",
+      "revision": 12
+     },
+     "output": {
+      "phase": "assess",
+      "index": 2,
+      "revision": 13,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Complete this tiling. What is the whole area in square units?",
+      "question": "Complete this tiling. What is the whole area in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "X....",
+        "X...."
+       ],
+       "mode": "partial"
+      },
+      "kind": "number",
+      "progress": "3 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 2,
+      "revision": 13,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "15",
+      "filled": [
+       6,
+       7,
+       8,
+       9,
+       11,
+       12,
+       13,
+       14
+      ],
+      "revision": 13
+     },
+     "output": {
+      "phase": "assess",
+      "index": 3,
+      "revision": 14,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Find the area inside this outline in square units.",
+      "question": "Find the area inside this outline in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXX..",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXX..",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "4 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 3,
+      "revision": 14,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "thirteen",
+      "revision": 14
+     },
+     "output": {
+      "phase": "assess",
+      "index": 4,
+      "revision": 15,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. How many units long is each side of a unit square?",
+      "question": "How many units long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "number",
+      "progress": "5 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 4,
+      "revision": 15,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "1",
+      "revision": 15
+     },
+     "output": {
+      "phase": "assess",
+      "index": 5,
+      "revision": 16,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Build any connected figure with an area of 6 square units. Then send your answer.",
+      "question": "Build any connected figure with an area of 6 square units. Then send your answer.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "....",
+        "....",
+        "...."
+       ],
+       "visible": [
+        "....",
+        "....",
+        "...."
+       ],
+       "mode": "build"
+      },
+      "kind": "build",
+      "progress": "6 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 5,
+      "revision": 16,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "My figure is ready",
+      "cells": [
+       0,
+       1,
+       2,
+       4,
+       5,
+       6
+      ],
+      "revision": 16
+     },
+     "output": {
+      "phase": "assess",
+      "index": 6,
+      "revision": 17,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. How many units long is the top edge?",
+      "question": "How many units long is the top edge?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "7 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 6,
+      "revision": 17,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         4,
+         5,
+         6
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "5 units",
+      "revision": 17
+     },
+     "output": {
+      "phase": "assess",
+      "index": 7,
+      "revision": 18,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Explain how tiling helps you find area, and why gaps or overlaps change the measurement.",
+      "question": "Explain how tiling helps you find area, and why gaps or overlaps change the measurement.",
+      "options": null,
+      "visual": null,
+      "kind": "reason",
+      "progress": "8 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 7,
+      "revision": 18,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         4,
+         5,
+         6
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5 units",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+      "revision": 18
+     },
+     "output": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "paused": false,
+      "started": true,
+      "title": "Your learning story",
+      "speech": "You finished your independent work. Let us review it with your parent.",
+      "options": null,
+      "visual": null,
+      "progress": "Lesson complete",
+      "summary": {
+       "correct": 7,
+       "total": 7,
+       "assistedConcepts": [],
+       "reasoning": [
+        {
+         "id": "tiling",
+         "response": "A gap leaves part of the surface uncounted",
+         "status": "unverified"
+        },
+        {
+         "id": "reason",
+         "response": "Squares fit edge to edge with no spaces",
+         "status": "unverified"
+        },
+        {
+         "id": "a7",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "status": "parent-review"
+        }
+       ],
+       "records": [
+        {
+         "id": "a1",
+         "skill": "count",
+         "response": "8",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 8,
+         "feedback": "Count each unit square once, row by row. State the total in square units."
+        },
+        {
+         "id": "a2",
+         "skill": "tiling",
+         "response": "Use equal unit squares with no gaps or overlaps",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": "Use equal unit squares with no gaps or overlaps",
+         "feedback": "Use equal unit squares. Cover the entire inside once, with no gaps or overlaps."
+        },
+        {
+         "id": "a3",
+         "skill": "partial",
+         "response": "15",
+         "filled": [
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 15,
+         "feedback": "Complete every blank space, then count both the original squares and the new squares."
+        },
+        {
+         "id": "a4",
+         "skill": "irregular",
+         "response": "thirteen",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 13,
+         "feedback": "Count only the squares inside the figure. Empty space outside does not count."
+        },
+        {
+         "id": "a5",
+         "skill": "unit",
+         "response": "1",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 1,
+         "feedback": "Each side of a unit square is 1 unit long. Its area is 1 square unit."
+        },
+        {
+         "id": "a6",
+         "skill": "make",
+         "response": "My figure is ready",
+         "cells": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 6,
+         "feedback": "Choose the requested number of squares and connect them edge to edge. More than one outline can be correct."
+        },
+        {
+         "id": "a8",
+         "skill": "edge",
+         "response": "5 units",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 5,
+         "feedback": "Count only the unit squares along the top edge. Edge length uses units, not square units."
+        },
+        {
+         "id": "a7",
+         "skill": "reason",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "correct": null,
+         "independent": true,
+         "skipped": false,
+         "expected": null,
+         "feedback": "Look for an explanation that tiling measures the entire inside once. Gaps miss surface; overlaps count some surface twice."
+        }
+       ],
+       "judgment": "A single lesson is limited evidence. Review the explanation with a parent and revisit these skills on another day before claiming mastery."
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         4,
+         5,
+         6
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5 units",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a7",
+        "skill": "reason",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "correct": null,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       },
+       {
+        "id": "a7",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "status": "parent-review"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "repeat",
+      "revision": 19
+     },
+     "output": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "paused": false,
+      "started": true,
+      "title": "Your learning story",
+      "speech": "You finished. Your parent can review your work below.",
+      "options": null,
+      "visual": null,
+      "progress": "Lesson complete",
+      "summary": {
+       "correct": 7,
+       "total": 7,
+       "assistedConcepts": [],
+       "reasoning": [
+        {
+         "id": "tiling",
+         "response": "A gap leaves part of the surface uncounted",
+         "status": "unverified"
+        },
+        {
+         "id": "reason",
+         "response": "Squares fit edge to edge with no spaces",
+         "status": "unverified"
+        },
+        {
+         "id": "a7",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "status": "parent-review"
+        }
+       ],
+       "records": [
+        {
+         "id": "a1",
+         "skill": "count",
+         "response": "8",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 8,
+         "feedback": "Count each unit square once, row by row. State the total in square units."
+        },
+        {
+         "id": "a2",
+         "skill": "tiling",
+         "response": "Use equal unit squares with no gaps or overlaps",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": "Use equal unit squares with no gaps or overlaps",
+         "feedback": "Use equal unit squares. Cover the entire inside once, with no gaps or overlaps."
+        },
+        {
+         "id": "a3",
+         "skill": "partial",
+         "response": "15",
+         "filled": [
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 15,
+         "feedback": "Complete every blank space, then count both the original squares and the new squares."
+        },
+        {
+         "id": "a4",
+         "skill": "irregular",
+         "response": "thirteen",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 13,
+         "feedback": "Count only the squares inside the figure. Empty space outside does not count."
+        },
+        {
+         "id": "a5",
+         "skill": "unit",
+         "response": "1",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 1,
+         "feedback": "Each side of a unit square is 1 unit long. Its area is 1 square unit."
+        },
+        {
+         "id": "a6",
+         "skill": "make",
+         "response": "My figure is ready",
+         "cells": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 6,
+         "feedback": "Choose the requested number of squares and connect them edge to edge. More than one outline can be correct."
+        },
+        {
+         "id": "a8",
+         "skill": "edge",
+         "response": "5 units",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 5,
+         "feedback": "Count only the unit squares along the top edge. Edge length uses units, not square units."
+        },
+        {
+         "id": "a7",
+         "skill": "reason",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "correct": null,
+         "independent": true,
+         "skipped": false,
+         "expected": null,
+         "feedback": "Look for an explanation that tiling measures the entire inside once. Gaps miss surface; overlaps count some surface twice."
+        }
+       ],
+       "judgment": "A single lesson is limited evidence. Review the explanation with a parent and revisit these skills on another day before claiming mastery."
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         4,
+         5,
+         6
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5 units",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a7",
+        "skill": "reason",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "correct": null,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       },
+       {
+        "id": "a7",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "status": "parent-review"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "start"
+     },
+     "output": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "paused": false,
+      "started": true,
+      "title": "Your learning story",
+      "speech": "",
+      "options": null,
+      "visual": null,
+      "progress": "Lesson complete",
+      "summary": {
+       "correct": 7,
+       "total": 7,
+       "assistedConcepts": [],
+       "reasoning": [
+        {
+         "id": "tiling",
+         "response": "A gap leaves part of the surface uncounted",
+         "status": "unverified"
+        },
+        {
+         "id": "reason",
+         "response": "Squares fit edge to edge with no spaces",
+         "status": "unverified"
+        },
+        {
+         "id": "a7",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "status": "parent-review"
+        }
+       ],
+       "records": [
+        {
+         "id": "a1",
+         "skill": "count",
+         "response": "8",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 8,
+         "feedback": "Count each unit square once, row by row. State the total in square units."
+        },
+        {
+         "id": "a2",
+         "skill": "tiling",
+         "response": "Use equal unit squares with no gaps or overlaps",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": "Use equal unit squares with no gaps or overlaps",
+         "feedback": "Use equal unit squares. Cover the entire inside once, with no gaps or overlaps."
+        },
+        {
+         "id": "a3",
+         "skill": "partial",
+         "response": "15",
+         "filled": [
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 15,
+         "feedback": "Complete every blank space, then count both the original squares and the new squares."
+        },
+        {
+         "id": "a4",
+         "skill": "irregular",
+         "response": "thirteen",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 13,
+         "feedback": "Count only the squares inside the figure. Empty space outside does not count."
+        },
+        {
+         "id": "a5",
+         "skill": "unit",
+         "response": "1",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 1,
+         "feedback": "Each side of a unit square is 1 unit long. Its area is 1 square unit."
+        },
+        {
+         "id": "a6",
+         "skill": "make",
+         "response": "My figure is ready",
+         "cells": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 6,
+         "feedback": "Choose the requested number of squares and connect them edge to edge. More than one outline can be correct."
+        },
+        {
+         "id": "a8",
+         "skill": "edge",
+         "response": "5 units",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 5,
+         "feedback": "Count only the unit squares along the top edge. Edge length uses units, not square units."
+        },
+        {
+         "id": "a7",
+         "skill": "reason",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "correct": null,
+         "independent": true,
+         "skipped": false,
+         "expected": null,
+         "feedback": "Look for an explanation that tiling measures the entire inside once. Gaps miss surface; overlaps count some surface twice."
+        }
+       ],
+       "judgment": "A single lesson is limited evidence. Review the explanation with a parent and revisit these skills on another day before claiming mastery."
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         4,
+         5,
+         6
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5 units",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a7",
+        "skill": "reason",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "correct": null,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       },
+       {
+        "id": "a7",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "status": "parent-review"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 19
+     },
+     "output": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "paused": false,
+      "started": true,
+      "title": "Your learning story",
+      "speech": "You finished. Your parent can review your work below.",
+      "options": null,
+      "visual": null,
+      "progress": "Lesson complete",
+      "summary": {
+       "correct": 7,
+       "total": 7,
+       "assistedConcepts": [],
+       "reasoning": [
+        {
+         "id": "tiling",
+         "response": "A gap leaves part of the surface uncounted",
+         "status": "unverified"
+        },
+        {
+         "id": "reason",
+         "response": "Squares fit edge to edge with no spaces",
+         "status": "unverified"
+        },
+        {
+         "id": "a7",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "status": "parent-review"
+        }
+       ],
+       "records": [
+        {
+         "id": "a1",
+         "skill": "count",
+         "response": "8",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 8,
+         "feedback": "Count each unit square once, row by row. State the total in square units."
+        },
+        {
+         "id": "a2",
+         "skill": "tiling",
+         "response": "Use equal unit squares with no gaps or overlaps",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": "Use equal unit squares with no gaps or overlaps",
+         "feedback": "Use equal unit squares. Cover the entire inside once, with no gaps or overlaps."
+        },
+        {
+         "id": "a3",
+         "skill": "partial",
+         "response": "15",
+         "filled": [
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 15,
+         "feedback": "Complete every blank space, then count both the original squares and the new squares."
+        },
+        {
+         "id": "a4",
+         "skill": "irregular",
+         "response": "thirteen",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 13,
+         "feedback": "Count only the squares inside the figure. Empty space outside does not count."
+        },
+        {
+         "id": "a5",
+         "skill": "unit",
+         "response": "1",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 1,
+         "feedback": "Each side of a unit square is 1 unit long. Its area is 1 square unit."
+        },
+        {
+         "id": "a6",
+         "skill": "make",
+         "response": "My figure is ready",
+         "cells": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 6,
+         "feedback": "Choose the requested number of squares and connect them edge to edge. More than one outline can be correct."
+        },
+        {
+         "id": "a8",
+         "skill": "edge",
+         "response": "5 units",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 5,
+         "feedback": "Count only the unit squares along the top edge. Edge length uses units, not square units."
+        },
+        {
+         "id": "a7",
+         "skill": "reason",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "correct": null,
+         "independent": true,
+         "skipped": false,
+         "expected": null,
+         "feedback": "Look for an explanation that tiling measures the entire inside once. Gaps miss surface; overlaps count some surface twice."
+        }
+       ],
+       "judgment": "A single lesson is limited evidence. Review the explanation with a parent and revisit these skills on another day before claiming mastery."
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         4,
+         5,
+         6
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5 units",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a7",
+        "skill": "reason",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "correct": null,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       },
+       {
+        "id": "a7",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "status": "parent-review"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "help",
+      "revision": 19
+     },
+     "output": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "paused": false,
+      "started": true,
+      "title": "Your learning story",
+      "speech": "You finished. Your parent can review your work below.",
+      "options": null,
+      "visual": null,
+      "progress": "Lesson complete",
+      "summary": {
+       "correct": 7,
+       "total": 7,
+       "assistedConcepts": [],
+       "reasoning": [
+        {
+         "id": "tiling",
+         "response": "A gap leaves part of the surface uncounted",
+         "status": "unverified"
+        },
+        {
+         "id": "reason",
+         "response": "Squares fit edge to edge with no spaces",
+         "status": "unverified"
+        },
+        {
+         "id": "a7",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "status": "parent-review"
+        }
+       ],
+       "records": [
+        {
+         "id": "a1",
+         "skill": "count",
+         "response": "8",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 8,
+         "feedback": "Count each unit square once, row by row. State the total in square units."
+        },
+        {
+         "id": "a2",
+         "skill": "tiling",
+         "response": "Use equal unit squares with no gaps or overlaps",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": "Use equal unit squares with no gaps or overlaps",
+         "feedback": "Use equal unit squares. Cover the entire inside once, with no gaps or overlaps."
+        },
+        {
+         "id": "a3",
+         "skill": "partial",
+         "response": "15",
+         "filled": [
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 15,
+         "feedback": "Complete every blank space, then count both the original squares and the new squares."
+        },
+        {
+         "id": "a4",
+         "skill": "irregular",
+         "response": "thirteen",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 13,
+         "feedback": "Count only the squares inside the figure. Empty space outside does not count."
+        },
+        {
+         "id": "a5",
+         "skill": "unit",
+         "response": "1",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 1,
+         "feedback": "Each side of a unit square is 1 unit long. Its area is 1 square unit."
+        },
+        {
+         "id": "a6",
+         "skill": "make",
+         "response": "My figure is ready",
+         "cells": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+         ],
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 6,
+         "feedback": "Choose the requested number of squares and connect them edge to edge. More than one outline can be correct."
+        },
+        {
+         "id": "a8",
+         "skill": "edge",
+         "response": "5 units",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 5,
+         "feedback": "Count only the unit squares along the top edge. Edge length uses units, not square units."
+        },
+        {
+         "id": "a7",
+         "skill": "reason",
+         "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+         "correct": null,
+         "independent": true,
+         "skipped": false,
+         "expected": null,
+         "feedback": "Look for an explanation that tiling measures the entire inside once. Gaps miss surface; overlaps count some surface twice."
+        }
+       ],
+       "judgment": "A single lesson is limited evidence. Review the explanation with a parent and revisit these skills on another day before claiming mastery."
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "review",
+      "index": 0,
+      "revision": 19,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "8",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Use equal unit squares with no gaps or overlaps",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "15",
+        "filled": [
+         6,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         14
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "thirteen",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "1",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         4,
+         5,
+         6
+        ],
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5 units",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a7",
+        "skill": "reason",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "correct": null,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       },
+       {
+        "id": "a7",
+        "response": "Tiling covers the whole inside once. Gaps miss space and overlaps count it twice.",
+        "status": "parent-review"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "wrong answers once or twice in every concept, then correct",
+   "turns": [
+    {
+     "input": {
+      "action": "start"
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "boundary",
+      "revision": 0
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 1,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Let us work on that together. Imagine coloring a shape. Area measures the surface you color. The line around it is its boundary. Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 1,
+      "attempts": 1,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 1
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 2,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "That matches this idea. Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 2,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "2",
+      "revision": 2
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 3,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "Let us work on that together. A unit is a chosen length. A unit square is one unit across and one unit tall. All our measuring squares must be the same size. This single measuring square is one unit across and one unit tall. It covers one square unit. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "This single measuring square is one unit across and one unit tall. It covers one square unit.",
+       "visual": {
+        "rows": [
+         "X"
+        ],
+        "visible": [
+         "X"
+        ],
+        "mode": "unit"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 3,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "one",
+      "revision": 3
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 4,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "That matches this idea. Tiling means covering a figure with unit squares, without gaps or overlaps. Gaps leave surface uncovered. Overlaps cover some surface twice. Why would a gap make our area count inaccurate?",
+      "question": "Why would a gap make our area count inaccurate?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "reason",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 4,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "A gap leaves part of the surface uncounted",
+      "revision": 4
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 5,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "Thank you for explaining. I will keep your explanation for your parent. Let us check the idea another way. If we leave part of a surface uncovered, what happens to the measurement?",
+      "question": "If we leave part of a surface uncovered, what happens to the measurement?",
+      "options": [
+       "It measures the whole surface",
+       "It misses some of the surface"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "exact",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 5,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "It measures the whole surface",
+      "revision": 5
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 6,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "Let us work on that together. Imagine laying square stickers on a card. They must meet edge to edge. No bare spots, and no sticker on top of another. These squares have spaces between them. Some of the surface is uncovered, so this is not a valid tiling. If we leave part of a surface uncovered, what happens to the measurement?",
+      "question": "If we leave part of a surface uncovered, what happens to the measurement?",
+      "options": [
+       "It measures the whole surface",
+       "It misses some of the surface"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "exact",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "These squares have spaces between them. Some of the surface is uncovered, so this is not a valid tiling.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "gaps"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 6,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "It misses some of the surface",
+      "revision": 6
+     },
+     "output": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 7,
+      "paused": false,
+      "started": true,
+      "title": "Count every square",
+      "speech": "That matches this idea. Each tile represents one square unit. Count every square exactly once. You can count across one row, then the next. What is the area of this figure in square units?",
+      "question": "What is the area of this figure in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "4 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 7,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "14",
+      "revision": 7
+     },
+     "output": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 8,
+      "paused": false,
+      "started": true,
+      "title": "Count every square",
+      "speech": "Let us work on that together. Touch each square as you count. Move to a new row after reaching the end. Say square units with your total. Count the top row: one, two, three. Keep counting in the bottom row: four, five, six. Six squares cover six square units. What is the area of this figure in square units?",
+      "question": "What is the area of this figure in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "4 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Count the top row: one, two, three. Keep counting in the bottom row: four, five, six. Six squares cover six square units.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 8,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "sixteen",
+      "revision": 8
+     },
+     "output": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 9,
+      "paused": false,
+      "started": true,
+      "title": "Count every square",
+      "speech": "Let us use a different picture in our minds. Touch each square as you count. Move to a new row after reaching the end. Say square units with your total. Count the top row: one, two, three. Keep counting in the bottom row: four, five, six. Six squares cover six square units. What is the area of this figure in square units?",
+      "question": "What is the area of this figure in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "4 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Count the top row: one, two, three. Keep counting in the bottom row: four, five, six. Six squares cover six square units.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 9,
+      "attempts": 2,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "15 square units",
+      "revision": 9
+     },
+     "output": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 10,
+      "paused": false,
+      "started": true,
+      "title": "Finish the tiling",
+      "speech": "That matches this idea. Some squares are missing from this tiling. The outline still shows the whole figure. Add equal unit squares until the whole inside is covered. Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "question": "Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "X...",
+        "X..."
+       ],
+       "mode": "partial"
+      },
+      "kind": "exact",
+      "progress": "5 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 10,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "12",
+      "filled": [],
+      "revision": 10
+     },
+     "output": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "Finish the tiling",
+      "speech": "Let us work on that together. Use a shown square as a guide. Extend its edges across the blank space. Count both the original squares and the ones you add. Finish covering the whole figure before counting. This smaller completed example has two rows of three squares: six square units. Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "question": "Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "X...",
+        "X..."
+       ],
+       "mode": "partial"
+      },
+      "kind": "exact",
+      "progress": "5 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Finish covering the whole figure before counting. This smaller completed example has two rows of three squares: six square units.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 11,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "12",
+      "filled": [
+       5,
+       6,
+       7,
+       9,
+       10,
+       11
+      ],
+      "revision": 11
+     },
+     "output": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 12,
+      "paused": false,
+      "started": true,
+      "title": "Follow the outline",
+      "speech": "That matches this idea. Not every figure is a rectangle. Tile only the surface inside this outline. Empty space outside the outline is not part of the figure. What is the area inside this outline in square units?",
+      "question": "What is the area inside this outline in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "6 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 12,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "9",
+      "revision": 12
+     },
+     "output": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 13,
+      "paused": false,
+      "started": true,
+      "title": "Follow the outline",
+      "speech": "Let us work on that together. This figure has a shorter top row. Count each row separately, including only squares that belong to the figure. This figure has two squares in its top row and three in its bottom row. Count only the five squares inside the figure. What is the area inside this outline in square units?",
+      "question": "What is the area inside this outline in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "6 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "This figure has two squares in its top row and three in its bottom row. Count only the five squares inside the figure.",
+       "visual": {
+        "rows": [
+         "XX.",
+         "XXX"
+        ],
+        "visible": [
+         "XX.",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 13,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "11",
+      "revision": 13
+     },
+     "output": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 14,
+      "paused": false,
+      "started": true,
+      "title": "Follow the outline",
+      "speech": "Let us use a different picture in our minds. This figure has a shorter top row. Count each row separately, including only squares that belong to the figure. This figure has two squares in its top row and three in its bottom row. Count only the five squares inside the figure. What is the area inside this outline in square units?",
+      "question": "What is the area inside this outline in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "6 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "This figure has two squares in its top row and three in its bottom row. Count only the five squares inside the figure.",
+       "visual": {
+        "rows": [
+         "XX.",
+         "XXX"
+        ],
+        "visible": [
+         "XX.",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 14,
+      "attempts": 2,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "ten",
+      "revision": 14
+     },
+     "output": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 15,
+      "paused": false,
+      "started": true,
+      "title": "Build an area",
+      "speech": "That matches this idea. We can also start with an area and build a figure. Each square you place contributes one square unit. Keep the squares connected edge to edge. Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "question": "Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "....",
+        "....",
+        "...."
+       ],
+       "visible": [
+        "....",
+        "....",
+        "...."
+       ],
+       "mode": "build"
+      },
+      "kind": "build",
+      "progress": "7 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 15,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "My figure is ready",
+      "cells": [
+       0,
+       1
+      ],
+      "revision": 15
+     },
+     "output": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 16,
+      "paused": false,
+      "started": true,
+      "title": "Build an area",
+      "speech": "Let us work on that together. For an area of four square units, you could join four equal squares. Many outlines can have the same area. Four squares can make a square figure or a long row. This example uses four squares in one row. Each square contributes one square unit. Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "question": "Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "....",
+        "....",
+        "...."
+       ],
+       "visible": [
+        "....",
+        "....",
+        "...."
+       ],
+       "mode": "build"
+      },
+      "kind": "build",
+      "progress": "7 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Four squares can make a square figure or a long row. This example uses four squares in one row. Each square contributes one square unit.",
+       "visual": {
+        "rows": [
+         "XXXX"
+        ],
+        "visible": [
+         "XXXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 16,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "My figure is ready",
+      "cells": [
+       0,
+       1,
+       2,
+       3,
+       8,
+       9,
+       10,
+       11
+      ],
+      "revision": 16
+     },
+     "output": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 17,
+      "paused": false,
+      "started": true,
+      "title": "Build an area",
+      "speech": "Let us use a different picture in our minds. For an area of four square units, you could join four equal squares. Many outlines can have the same area. Four squares can make a square figure or a long row. This example uses four squares in one row. Each square contributes one square unit. Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "question": "Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "....",
+        "....",
+        "...."
+       ],
+       "visible": [
+        "....",
+        "....",
+        "...."
+       ],
+       "mode": "build"
+      },
+      "kind": "build",
+      "progress": "7 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Four squares can make a square figure or a long row. This example uses four squares in one row. Each square contributes one square unit.",
+       "visual": {
+        "rows": [
+         "XXXX"
+        ],
+        "visible": [
+         "XXXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 17,
+      "attempts": 2,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "My figure is ready",
+      "cells": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "revision": 17
+     },
+     "output": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 18,
+      "paused": false,
+      "started": true,
+      "title": "Squares along an edge",
+      "speech": "That matches this idea. Each unit square is one unit wide. If four unit squares sit side by side along an edge, that edge is four units long. Length uses units; area uses square units. How many units long is the top edge of this figure?",
+      "question": "How many units long is the top edge of this figure?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "8 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 18,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "5",
+      "revision": 18
+     },
+     "output": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 19,
+      "paused": false,
+      "started": true,
+      "title": "Squares along an edge",
+      "speech": "Let us work on that together. Trace the top edge with your finger. Each square adds one unit to that edge. Count the squares across, not all the squares inside. Three unit squares side by side make an edge three units long. This entire two-row figure covers six square units. How many units long is the top edge of this figure?",
+      "question": "How many units long is the top edge of this figure?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "8 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Three unit squares side by side make an edge three units long. This entire two-row figure covers six square units.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 19,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make",
+       "edge"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "4",
+      "revision": 19
+     },
+     "output": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 20,
+      "paused": false,
+      "started": true,
+      "title": "Explain your thinking",
+      "speech": "That matches this idea. Equal squares fit together edge to edge to cover a surface. Circles leave spaces between them. Tiling helps us measure all of the inside once. Why are unit squares better than circles for tiling a figure?",
+      "question": "Why are unit squares better than circles for tiling a figure?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXX",
+        "XXX"
+       ],
+       "visible": [
+        "XXX",
+        "XXX"
+       ],
+       "mode": "circles"
+      },
+      "kind": "reason",
+      "progress": "9 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 20,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make",
+       "edge"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Squares fit edge to edge with no spaces",
+      "revision": 20
+     },
+     "output": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 21,
+      "paused": false,
+      "started": true,
+      "title": "Explain your thinking",
+      "speech": "Thank you for explaining. I will keep your explanation for your parent. Let us check the idea another way. Which tiles can meet edge to edge without leaving spaces?",
+      "question": "Which tiles can meet edge to edge without leaving spaces?",
+      "options": [
+       "Equal unit squares",
+       "Circles"
+      ],
+      "visual": {
+       "rows": [
+        "XXX",
+        "XXX"
+       ],
+       "visible": [
+        "XXX",
+        "XXX"
+       ],
+       "mode": "circles"
+      },
+      "kind": "exact",
+      "progress": "9 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 21,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make",
+       "edge"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Circles",
+      "revision": 21
+     },
+     "output": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 22,
+      "paused": false,
+      "started": true,
+      "title": "Explain your thinking",
+      "speech": "Let us work on that together. The job is to cover the entire surface exactly once. Square sides meet neatly. Round tiles leave uncovered spaces. Round tiles leave spaces between them. The spaces are part of the surface too. Equal squares can meet edge to edge. Which tiles can meet edge to edge without leaving spaces?",
+      "question": "Which tiles can meet edge to edge without leaving spaces?",
+      "options": [
+       "Equal unit squares",
+       "Circles"
+      ],
+      "visual": {
+       "rows": [
+        "XXX",
+        "XXX"
+       ],
+       "visible": [
+        "XXX",
+        "XXX"
+       ],
+       "mode": "circles"
+      },
+      "kind": "exact",
+      "progress": "9 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Round tiles leave spaces between them. The spaces are part of the surface too. Equal squares can meet edge to edge.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "circles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 22,
+      "attempts": 1,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make",
+       "edge",
+       "reason"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Equal unit squares",
+      "revision": 22
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 23,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "You have worked through the teaching. Now solve these on your own. I will save feedback until you finish. Find the area in square units.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 23,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling",
+       "count",
+       "partial",
+       "irregular",
+       "make",
+       "edge",
+       "reason"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "teaching controls: help, repeat, pause, resume, questions, spoken commands",
+   "turns": [
+    {
+     "input": {
+      "action": "start"
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "help",
+      "revision": 0
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 1,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Imagine coloring a shape. Area measures the surface you color. The line around it is its boundary. Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 1,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "repeat",
+      "revision": 1
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 1,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 1,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "pause",
+      "revision": 1
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 2,
+      "paused": true,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Take your time. Use Resume when you are ready.",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 2,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": true,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 2
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 2,
+      "paused": true,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "I am paused. Use Resume when you are ready.",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 2,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": true,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "repeat",
+      "revision": 2
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 2,
+      "paused": true,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "I am paused. Use Resume when you are ready.",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 2,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": true,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "resume",
+      "revision": 2
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 3,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 3,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Why does area matter?",
+      "revision": 3
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 4,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Imagine coloring a shape. Area measures the surface you color. The line around it is its boundary. Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": true,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 4,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "How do we know?",
+      "revision": 4
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 5,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Imagine coloring a shape. Area measures the surface you color. The line around it is its boundary. Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "Think of a small picture frame. The squares cover the picture inside. The frame around the edge is the boundary.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "tiles"
+       }
+      }
+     },
+     "needsCoach": true,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 5,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 5
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 6,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "That matches this idea. Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 6,
+      "attempts": 0,
+      "assisted": [
+       "inside"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "I don't understand",
+      "revision": 6
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 7,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "A unit is a chosen length. A unit square is one unit across and one unit tall. All our measuring squares must be the same size. This single measuring square is one unit across and one unit tall. It covers one square unit. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "This single measuring square is one unit across and one unit tall. It covers one square unit.",
+       "visual": {
+        "rows": [
+         "X"
+        ],
+        "visible": [
+         "X"
+        ],
+        "mode": "unit"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 7,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "I'm still thinking",
+      "revision": 7
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 8,
+      "paused": true,
+      "started": true,
+      "title": "One little square",
+      "speech": "Take your time. Use Resume when you are ready.",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 8,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": true,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "resume",
+      "revision": 8
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 9,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 9,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Can you repeat that?",
+      "revision": 9
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 9,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 9,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "I'm finished",
+      "revision": 9
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 9,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "Send your answer when you are ready. You may also say: skip this problem.",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 9,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "stop",
+      "revision": 9
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 10,
+      "paused": true,
+      "started": true,
+      "title": "One little square",
+      "speech": "Take your time. Use Resume when you are ready.",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 10,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": true,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "resume",
+      "revision": 10
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 11,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "question",
+      "message": "what is a unit",
+      "revision": 11
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 12,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "A unit is a chosen length. A unit square is one unit across and one unit tall. All our measuring squares must be the same size. This single measuring square is one unit across and one unit tall. It covers one square unit. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "This single measuring square is one unit across and one unit tall. It covers one square unit.",
+       "visual": {
+        "rows": [
+         "X"
+        ],
+        "visible": [
+         "X"
+        ],
+        "mode": "unit"
+       }
+      }
+     },
+     "needsCoach": true,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 12,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "one",
+      "revision": 12
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 13,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "That matches this idea. Tiling means covering a figure with unit squares, without gaps or overlaps. Gaps leave surface uncovered. Overlaps cover some surface twice. Why would a gap make our area count inaccurate?",
+      "question": "Why would a gap make our area count inaccurate?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "reason",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 13,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "A gap leaves part of the surface uncounted",
+      "revision": 13
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 14,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "Thank you for explaining. I will keep your explanation for your parent. Let us check the idea another way. If we leave part of a surface uncovered, what happens to the measurement?",
+      "question": "If we leave part of a surface uncovered, what happens to the measurement?",
+      "options": [
+       "It measures the whole surface",
+       "It misses some of the surface"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "exact",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 14,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "repeat",
+      "revision": 14
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 14,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "Tiling means covering a figure with unit squares, without gaps or overlaps. Gaps leave surface uncovered. Overlaps cover some surface twice. If we leave part of a surface uncovered, what happens to the measurement?",
+      "question": "If we leave part of a surface uncovered, what happens to the measurement?",
+      "options": [
+       "It measures the whole surface",
+       "It misses some of the surface"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "exact",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 14,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "help",
+      "revision": 14
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 15,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "Imagine laying square stickers on a card. They must meet edge to edge. No bare spots, and no sticker on top of another. These squares have spaces between them. Some of the surface is uncovered, so this is not a valid tiling. If we leave part of a surface uncovered, what happens to the measurement?",
+      "question": "If we leave part of a surface uncovered, what happens to the measurement?",
+      "options": [
+       "It measures the whole surface",
+       "It misses some of the surface"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "exact",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null,
+      "example": {
+       "text": "These squares have spaces between them. Some of the surface is uncovered, so this is not a valid tiling.",
+       "visual": {
+        "rows": [
+         "XXX",
+         "XXX"
+        ],
+        "visible": [
+         "XXX",
+         "XXX"
+        ],
+        "mode": "gaps"
+       }
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 15,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "It misses some of the surface",
+      "revision": 15
+     },
+     "output": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 16,
+      "paused": false,
+      "started": true,
+      "title": "Count every square",
+      "speech": "That matches this idea. Each tile represents one square unit. Count every square exactly once. You can count across one row, then the next. What is the area of this figure in square units?",
+      "question": "What is the area of this figure in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "4 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 16,
+      "attempts": 0,
+      "assisted": [
+       "inside",
+       "unit",
+       "tiling"
+      ],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "independent assessment: no help, commands, wrong, skip and reasoning",
+   "turns": [
+    {
+     "input": {
+      "action": "start"
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 0
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 1,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "That matches this idea. Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 1,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "one",
+      "revision": 1
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 2,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "That matches this idea. Tiling means covering a figure with unit squares, without gaps or overlaps. Gaps leave surface uncovered. Overlaps cover some surface twice. Why would a gap make our area count inaccurate?",
+      "question": "Why would a gap make our area count inaccurate?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "reason",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 2,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "A gap leaves part of the surface uncounted",
+      "revision": 2
+     },
+     "output": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 3,
+      "paused": false,
+      "started": true,
+      "title": "Cover without gaps",
+      "speech": "Thank you for explaining. I will keep your explanation for your parent. Let us check the idea another way. If we leave part of a surface uncovered, what happens to the measurement?",
+      "question": "If we leave part of a surface uncovered, what happens to the measurement?",
+      "options": [
+       "It measures the whole surface",
+       "It misses some of the surface"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "gaps"
+      },
+      "kind": "exact",
+      "progress": "3 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 2,
+      "revision": 3,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "It misses some of the surface",
+      "revision": 3
+     },
+     "output": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 4,
+      "paused": false,
+      "started": true,
+      "title": "Count every square",
+      "speech": "That matches this idea. Each tile represents one square unit. Count every square exactly once. You can count across one row, then the next. What is the area of this figure in square units?",
+      "question": "What is the area of this figure in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "4 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 3,
+      "revision": 4,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "15 square units",
+      "revision": 4
+     },
+     "output": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 5,
+      "paused": false,
+      "started": true,
+      "title": "Finish the tiling",
+      "speech": "That matches this idea. Some squares are missing from this tiling. The outline still shows the whole figure. Add equal unit squares until the whole inside is covered. Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "question": "Complete the tiling by tapping the blank spaces. Then what is the whole area in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "X...",
+        "X..."
+       ],
+       "mode": "partial"
+      },
+      "kind": "exact",
+      "progress": "5 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 4,
+      "revision": 5,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "12",
+      "filled": [
+       5,
+       6,
+       7,
+       9,
+       10,
+       11
+      ],
+      "revision": 5
+     },
+     "output": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 6,
+      "paused": false,
+      "started": true,
+      "title": "Follow the outline",
+      "speech": "That matches this idea. Not every figure is a rectangle. Tile only the surface inside this outline. Empty space outside the outline is not part of the figure. What is the area inside this outline in square units?",
+      "question": "What is the area inside this outline in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XX..",
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "6 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 5,
+      "revision": 6,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "ten",
+      "revision": 6
+     },
+     "output": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 7,
+      "paused": false,
+      "started": true,
+      "title": "Build an area",
+      "speech": "That matches this idea. We can also start with an area and build a figure. Each square you place contributes one square unit. Keep the squares connected edge to edge. Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "question": "Tap squares to build any connected figure with an area of 8 square units. Then send your answer.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "....",
+        "....",
+        "...."
+       ],
+       "visible": [
+        "....",
+        "....",
+        "...."
+       ],
+       "mode": "build"
+      },
+      "kind": "build",
+      "progress": "7 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 6,
+      "revision": 7,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "My figure is ready",
+      "cells": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "revision": 7
+     },
+     "output": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 8,
+      "paused": false,
+      "started": true,
+      "title": "Squares along an edge",
+      "speech": "That matches this idea. Each unit square is one unit wide. If four unit squares sit side by side along an edge, that edge is four units long. Length uses units; area uses square units. How many units long is the top edge of this figure?",
+      "question": "How many units long is the top edge of this figure?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "8 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 7,
+      "revision": 8,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "4",
+      "revision": 8
+     },
+     "output": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 9,
+      "paused": false,
+      "started": true,
+      "title": "Explain your thinking",
+      "speech": "That matches this idea. Equal squares fit together edge to edge to cover a surface. Circles leave spaces between them. Tiling helps us measure all of the inside once. Why are unit squares better than circles for tiling a figure?",
+      "question": "Why are unit squares better than circles for tiling a figure?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXX",
+        "XXX"
+       ],
+       "visible": [
+        "XXX",
+        "XXX"
+       ],
+       "mode": "circles"
+      },
+      "kind": "reason",
+      "progress": "9 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 9,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Squares fit edge to edge with no spaces",
+      "revision": 9
+     },
+     "output": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 10,
+      "paused": false,
+      "started": true,
+      "title": "Explain your thinking",
+      "speech": "Thank you for explaining. I will keep your explanation for your parent. Let us check the idea another way. Which tiles can meet edge to edge without leaving spaces?",
+      "question": "Which tiles can meet edge to edge without leaving spaces?",
+      "options": [
+       "Equal unit squares",
+       "Circles"
+      ],
+      "visual": {
+       "rows": [
+        "XXX",
+        "XXX"
+       ],
+       "visible": [
+        "XXX",
+        "XXX"
+       ],
+       "mode": "circles"
+      },
+      "kind": "exact",
+      "progress": "9 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 8,
+      "revision": 10,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": true
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Equal unit squares",
+      "revision": 10
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "You have worked through the teaching. Now solve these on your own. I will save feedback until you finish. Find the area in square units.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "help",
+      "revision": 11
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "This is your independent turn. I can repeat the question, but I will save help until the review. You may say: skip this problem.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "question",
+      "message": "what is the answer",
+      "revision": 11
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "This is your independent turn. I can repeat the question, but I will save help until the review. You may say: skip this problem.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "I don't understand",
+      "revision": 11
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "This is your independent turn. I can repeat the question, but I will save help until the review. You may say: skip this problem.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "repeat",
+      "revision": 11
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Find the area in square units.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 11,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "pause",
+      "revision": 11
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 12,
+      "paused": true,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Take your time. Use Resume when you are ready.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 12,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": true,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "8",
+      "revision": 12
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 12,
+      "paused": true,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "I am paused. Use Resume when you are ready.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 12,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": true,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "resume",
+      "revision": 12
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 13,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Find the area in square units.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 13,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "I'm finished",
+      "revision": 13
+     },
+     "output": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 13,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Send your answer when you are ready. You may also say: skip this problem.",
+      "question": "Find the area in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "1 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 0,
+      "revision": 13,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "999",
+      "revision": 13
+     },
+     "output": {
+      "phase": "assess",
+      "index": 1,
+      "revision": 14,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Which rule gives a valid area measurement?",
+      "question": "Which rule gives a valid area measurement?",
+      "options": [
+       "Leave gaps",
+       "Cover some places twice",
+       "Use equal unit squares with no gaps or overlaps"
+      ],
+      "visual": null,
+      "kind": "exact",
+      "progress": "2 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 1,
+      "revision": 14,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "Leave gaps",
+      "revision": 14
+     },
+     "output": {
+      "phase": "assess",
+      "index": 2,
+      "revision": 15,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Complete this tiling. What is the whole area in square units?",
+      "question": "Complete this tiling. What is the whole area in square units?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "X....",
+        "X...."
+       ],
+       "mode": "partial"
+      },
+      "kind": "number",
+      "progress": "3 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 2,
+      "revision": 15,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "skip this problem",
+      "revision": 15
+     },
+     "output": {
+      "phase": "assess",
+      "index": 3,
+      "revision": 16,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Find the area inside this outline in square units.",
+      "question": "Find the area inside this outline in square units.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXX..",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXX..",
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "4 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 3,
+      "revision": 16,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "skip this problem",
+        "filled": [],
+        "correct": false,
+        "independent": true,
+        "skipped": true
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "13",
+      "revision": 16
+     },
+     "output": {
+      "phase": "assess",
+      "index": 4,
+      "revision": 17,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. How many units long is each side of a unit square?",
+      "question": "How many units long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "number",
+      "progress": "5 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 4,
+      "revision": 17,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "skip this problem",
+        "filled": [],
+        "correct": false,
+        "independent": true,
+        "skipped": true
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "13",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "one unit",
+      "revision": 17
+     },
+     "output": {
+      "phase": "assess",
+      "index": 5,
+      "revision": 18,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Build any connected figure with an area of 6 square units. Then send your answer.",
+      "question": "Build any connected figure with an area of 6 square units. Then send your answer.",
+      "options": null,
+      "visual": {
+       "rows": [
+        "....",
+        "....",
+        "...."
+       ],
+       "visible": [
+        "....",
+        "....",
+        "...."
+       ],
+       "mode": "build"
+      },
+      "kind": "build",
+      "progress": "6 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 5,
+      "revision": 18,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "skip this problem",
+        "filled": [],
+        "correct": false,
+        "independent": true,
+        "skipped": true
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "13",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "one unit",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "My figure is ready",
+      "cells": [
+       0,
+       1,
+       2,
+       3,
+       8,
+       9
+      ],
+      "revision": 18
+     },
+     "output": {
+      "phase": "assess",
+      "index": 6,
+      "revision": 19,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. How many units long is the top edge?",
+      "question": "How many units long is the top edge?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "XXXXX",
+        "XXXXX"
+       ],
+       "visible": [
+        "XXXXX",
+        "XXXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "number",
+      "progress": "7 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 6,
+      "revision": 19,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "skip this problem",
+        "filled": [],
+        "correct": false,
+        "independent": true,
+        "skipped": true
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "13",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "one unit",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         3,
+         8,
+         9
+        ],
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "5",
+      "revision": 19
+     },
+     "output": {
+      "phase": "assess",
+      "index": 7,
+      "revision": 20,
+      "paused": false,
+      "started": true,
+      "title": "Your independent turn",
+      "speech": "Answer saved. Explain how tiling helps you find area, and why gaps or overlaps change the measurement.",
+      "question": "Explain how tiling helps you find area, and why gaps or overlaps change the measurement.",
+      "options": null,
+      "visual": null,
+      "kind": "reason",
+      "progress": "8 of 8 independent problems",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "assess",
+      "index": 7,
+      "revision": 20,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "skip this problem",
+        "filled": [],
+        "correct": false,
+        "independent": true,
+        "skipped": true
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "13",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "one unit",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         3,
+         8,
+         9
+        ],
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "How tiling helps is that it covers the inside once.",
+      "revision": 20
+     },
+     "output": {
+      "phase": "review",
+      "index": 0,
+      "revision": 21,
+      "paused": false,
+      "started": true,
+      "title": "Your learning story",
+      "speech": "You finished your independent work. Let us review it with your parent.",
+      "options": null,
+      "visual": null,
+      "progress": "Lesson complete",
+      "summary": {
+       "correct": 3,
+       "total": 7,
+       "assistedConcepts": [],
+       "reasoning": [
+        {
+         "id": "tiling",
+         "response": "A gap leaves part of the surface uncounted",
+         "status": "unverified"
+        },
+        {
+         "id": "reason",
+         "response": "Squares fit edge to edge with no spaces",
+         "status": "unverified"
+        },
+        {
+         "id": "a7",
+         "response": "How tiling helps is that it covers the inside once.",
+         "status": "parent-review"
+        }
+       ],
+       "records": [
+        {
+         "id": "a1",
+         "skill": "count",
+         "response": "999",
+         "correct": false,
+         "independent": true,
+         "skipped": false,
+         "expected": 8,
+         "feedback": "Count each unit square once, row by row. State the total in square units."
+        },
+        {
+         "id": "a2",
+         "skill": "tiling",
+         "response": "Leave gaps",
+         "correct": false,
+         "independent": true,
+         "skipped": false,
+         "expected": "Use equal unit squares with no gaps or overlaps",
+         "feedback": "Use equal unit squares. Cover the entire inside once, with no gaps or overlaps."
+        },
+        {
+         "id": "a3",
+         "skill": "partial",
+         "response": "skip this problem",
+         "filled": [],
+         "correct": false,
+         "independent": true,
+         "skipped": true,
+         "expected": 15,
+         "feedback": "Complete every blank space, then count both the original squares and the new squares."
+        },
+        {
+         "id": "a4",
+         "skill": "irregular",
+         "response": "13",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 13,
+         "feedback": "Count only the squares inside the figure. Empty space outside does not count."
+        },
+        {
+         "id": "a5",
+         "skill": "unit",
+         "response": "one unit",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 1,
+         "feedback": "Each side of a unit square is 1 unit long. Its area is 1 square unit."
+        },
+        {
+         "id": "a6",
+         "skill": "make",
+         "response": "My figure is ready",
+         "cells": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9
+         ],
+         "correct": false,
+         "independent": true,
+         "skipped": false,
+         "expected": 6,
+         "feedback": "Choose the requested number of squares and connect them edge to edge. More than one outline can be correct."
+        },
+        {
+         "id": "a8",
+         "skill": "edge",
+         "response": "5",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 5,
+         "feedback": "Count only the unit squares along the top edge. Edge length uses units, not square units."
+        },
+        {
+         "id": "a7",
+         "skill": "reason",
+         "response": "How tiling helps is that it covers the inside once.",
+         "correct": null,
+         "independent": true,
+         "skipped": false,
+         "expected": null,
+         "feedback": "Look for an explanation that tiling measures the entire inside once. Gaps miss surface; overlaps count some surface twice."
+        }
+       ],
+       "judgment": "A single lesson is limited evidence. Review the explanation with a parent and revisit these skills on another day before claiming mastery."
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "review",
+      "index": 0,
+      "revision": 21,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "skip this problem",
+        "filled": [],
+        "correct": false,
+        "independent": true,
+        "skipped": true
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "13",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "one unit",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         3,
+         8,
+         9
+        ],
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a7",
+        "skill": "reason",
+        "response": "How tiling helps is that it covers the inside once.",
+        "correct": null,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       },
+       {
+        "id": "a7",
+        "response": "How tiling helps is that it covers the inside once.",
+        "status": "parent-review"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 21
+     },
+     "output": {
+      "phase": "review",
+      "index": 0,
+      "revision": 21,
+      "paused": false,
+      "started": true,
+      "title": "Your learning story",
+      "speech": "You finished. Your parent can review your work below.",
+      "options": null,
+      "visual": null,
+      "progress": "Lesson complete",
+      "summary": {
+       "correct": 3,
+       "total": 7,
+       "assistedConcepts": [],
+       "reasoning": [
+        {
+         "id": "tiling",
+         "response": "A gap leaves part of the surface uncounted",
+         "status": "unverified"
+        },
+        {
+         "id": "reason",
+         "response": "Squares fit edge to edge with no spaces",
+         "status": "unverified"
+        },
+        {
+         "id": "a7",
+         "response": "How tiling helps is that it covers the inside once.",
+         "status": "parent-review"
+        }
+       ],
+       "records": [
+        {
+         "id": "a1",
+         "skill": "count",
+         "response": "999",
+         "correct": false,
+         "independent": true,
+         "skipped": false,
+         "expected": 8,
+         "feedback": "Count each unit square once, row by row. State the total in square units."
+        },
+        {
+         "id": "a2",
+         "skill": "tiling",
+         "response": "Leave gaps",
+         "correct": false,
+         "independent": true,
+         "skipped": false,
+         "expected": "Use equal unit squares with no gaps or overlaps",
+         "feedback": "Use equal unit squares. Cover the entire inside once, with no gaps or overlaps."
+        },
+        {
+         "id": "a3",
+         "skill": "partial",
+         "response": "skip this problem",
+         "filled": [],
+         "correct": false,
+         "independent": true,
+         "skipped": true,
+         "expected": 15,
+         "feedback": "Complete every blank space, then count both the original squares and the new squares."
+        },
+        {
+         "id": "a4",
+         "skill": "irregular",
+         "response": "13",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 13,
+         "feedback": "Count only the squares inside the figure. Empty space outside does not count."
+        },
+        {
+         "id": "a5",
+         "skill": "unit",
+         "response": "one unit",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 1,
+         "feedback": "Each side of a unit square is 1 unit long. Its area is 1 square unit."
+        },
+        {
+         "id": "a6",
+         "skill": "make",
+         "response": "My figure is ready",
+         "cells": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9
+         ],
+         "correct": false,
+         "independent": true,
+         "skipped": false,
+         "expected": 6,
+         "feedback": "Choose the requested number of squares and connect them edge to edge. More than one outline can be correct."
+        },
+        {
+         "id": "a8",
+         "skill": "edge",
+         "response": "5",
+         "correct": true,
+         "independent": true,
+         "skipped": false,
+         "expected": 5,
+         "feedback": "Count only the unit squares along the top edge. Edge length uses units, not square units."
+        },
+        {
+         "id": "a7",
+         "skill": "reason",
+         "response": "How tiling helps is that it covers the inside once.",
+         "correct": null,
+         "independent": true,
+         "skipped": false,
+         "expected": null,
+         "feedback": "Look for an explanation that tiling measures the entire inside once. Gaps miss surface; overlaps count some surface twice."
+        }
+       ],
+       "judgment": "A single lesson is limited evidence. Review the explanation with a parent and revisit these skills on another day before claiming mastery."
+      }
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "review",
+      "index": 0,
+      "revision": 21,
+      "attempts": 0,
+      "assisted": [],
+      "records": [
+       {
+        "id": "a1",
+        "skill": "count",
+        "response": "999",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a2",
+        "skill": "tiling",
+        "response": "Leave gaps",
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a3",
+        "skill": "partial",
+        "response": "skip this problem",
+        "filled": [],
+        "correct": false,
+        "independent": true,
+        "skipped": true
+       },
+       {
+        "id": "a4",
+        "skill": "irregular",
+        "response": "13",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a5",
+        "skill": "unit",
+        "response": "one unit",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a6",
+        "skill": "make",
+        "response": "My figure is ready",
+        "cells": [
+         0,
+         1,
+         2,
+         3,
+         8,
+         9
+        ],
+        "correct": false,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a8",
+        "skill": "edge",
+        "response": "5",
+        "correct": true,
+        "independent": true,
+        "skipped": false
+       },
+       {
+        "id": "a7",
+        "skill": "reason",
+        "response": "How tiling helps is that it covers the inside once.",
+        "correct": null,
+        "independent": true,
+        "skipped": false
+       }
+      ],
+      "reasoning": [
+       {
+        "id": "tiling",
+        "response": "A gap leaves part of the surface uncounted",
+        "status": "unverified"
+       },
+       {
+        "id": "reason",
+        "response": "Squares fit edge to edge with no spaces",
+        "status": "unverified"
+       },
+       {
+        "id": "a7",
+        "response": "How tiling helps is that it covers the inside once.",
+        "status": "parent-review"
+       }
+      ],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "invalid and stale turns are rejected",
+   "turns": [
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 0
+     },
+     "error": "Start instruction first",
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": false,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "start"
+     },
+     "output": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "paused": false,
+      "started": true,
+      "title": "Cover the inside",
+      "speech": "Area tells how much flat space is inside a figure. Imagine covering the face of a classroom board with square paper. The paper covers the inside. Does area measure the inside surface or the boundary?",
+      "question": "Does area measure the inside surface or the boundary?",
+      "options": [
+       "Inside surface",
+       "Boundary"
+      ],
+      "visual": {
+       "rows": [
+        "XXXX",
+        "XXXX"
+       ],
+       "visible": [
+        "XXXX",
+        "XXXX"
+       ],
+       "mode": "tiles"
+      },
+      "kind": "exact",
+      "progress": "1 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 7
+     },
+     "error": "Stale turn",
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "advance",
+      "revision": 0
+     },
+     "error": "Invalid action",
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "revision": 0
+     },
+     "error": "Invalid message",
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "   ",
+      "revision": 0
+     },
+     "error": "Empty response",
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": 42,
+      "revision": 0
+     },
+     "error": "Invalid message",
+     "state": {
+      "phase": "teach",
+      "index": 0,
+      "revision": 0,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    },
+    {
+     "input": {
+      "action": "answer",
+      "message": "inside",
+      "revision": 0
+     },
+     "output": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 1,
+      "paused": false,
+      "started": true,
+      "title": "One little square",
+      "speech": "That matches this idea. Each side of a unit square is one unit long. Equal unit squares give us a consistent way to measure a surface. How long is each side of a unit square?",
+      "question": "How long is each side of a unit square?",
+      "options": null,
+      "visual": {
+       "rows": [
+        "X"
+       ],
+       "visible": [
+        "X"
+       ],
+       "mode": "unit"
+      },
+      "kind": "exact",
+      "progress": "2 of 9 teaching ideas",
+      "summary": null
+     },
+     "needsCoach": false,
+     "state": {
+      "phase": "teach",
+      "index": 1,
+      "revision": 1,
+      "attempts": 0,
+      "assisted": [],
+      "records": [],
+      "reasoning": [],
+      "paused": false,
+      "started": true,
+      "checkVariant": false
+     }
+    }
+   ]
+  }
+ ]
+}

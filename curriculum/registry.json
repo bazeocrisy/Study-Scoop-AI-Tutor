@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "default": "6-1",
+  "lessons": [
+    {"id": "6-1", "file": "6-1.json", "subject": "math", "grade": 3, "title": "Understand Area"}
+  ]
+}

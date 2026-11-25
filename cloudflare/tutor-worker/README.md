@@ -1,11 +1,11 @@
 # Separate parent pilot Worker — not deployed
 
-Uses the shared controller and verified lesson. Browser cannot choose lesson position, answer keys, quotas or AI prompts. HMAC-signed, random session capabilities expire within one hour, bind to lesson 6-1 and are kept only in browser memory. This is parent-provisioned pilot access, not child accounts. A stolen token remains usable until expiry; keep it private. CORS is an additional browser restriction, not authentication.
+Uses the shared controller and verified lesson. Browser cannot choose lesson position, answer keys, quotas or AI prompts. HMAC-signed, random session capabilities expire within one hour, bind to one registered lesson (rejected unless it passes schema validation) and are kept only in browser memory. This is parent-provisioned pilot access, not child accounts. A stolen token remains usable until expiry; keep it private. CORS is an additional browser restriction, not authentication.
 
 Before an owner-approved deployment:
 1. Run `npm ci` from the repository root. Wrangler dry-run bundling and local workerd/Durable Object smoke checks passed in this environment; rerun `npm run test:runtime` after deployment configuration changes. This does not deploy.
 2. Configure a separate Worker and Durable Object binding from this directory. Choose an approved hostname; workers_dev is disabled and routes are deliberately absent.
-3. Provision SESSION_SIGNING_SECRET as a Worker secret (32+ random characters). On the parent's trusted machine use the same secret with `node scripts/issue-session.js` from repo root; paste only the one-hour output token into Parent setup. Never put the signing secret in the frontend. Origin must exactly match ALLOWED_ORIGINS.
+3. Provision SESSION_SIGNING_SECRET as a Worker secret (32+ random characters). On the parent's trusted machine use the same secret with `node scripts/issue-session.js [lesson-id]` from repo root (default: the registry default lesson); paste only the one-hour output token into Parent setup. Never put the signing secret in the frontend. Origin must exactly match ALLOWED_ORIGINS.
 4. Leave AI_ENABLED=false for no paid calls. To enable after cost approval: verify a currently supported Anthropic Messages model using official docs and a model lookup, set MODEL and ANTHROPIC_API_KEY as server configuration, set an account spend limit, then AI_ENABLED=true. This run could not retrieve current provider documentation; no model ID is guessed.
 5. Review browser speech vendor processing and guardian consent before a child uses the microphone. This tutor stores no raw audio. Speech recognition may send audio to the browser vendor independently of the Worker.
 
